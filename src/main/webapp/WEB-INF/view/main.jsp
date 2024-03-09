@@ -258,8 +258,23 @@
   
         </div>
       </section>
-      <!-- End 공지사항 -->
+      <!-- End 학사일정 -->
 
+
+ <!-- ======= 오늘의 학식 ======= -->
+      <section id="popular-courses" class="courses">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-title">
+            <h2>Menu</h2>
+            <p>오늘의 학식</p>
+          </div>
+
+
+
+        </div>
+      </section>
+      <!-- End 학사일정 -->
 
 
   
