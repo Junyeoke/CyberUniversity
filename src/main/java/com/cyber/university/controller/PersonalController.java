@@ -1,9 +1,5 @@
 package com.cyber.university.controller;
 
-<<<<<<< HEAD
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-=======
 import com.cyber.university.dto.LoginDto;
 import com.cyber.university.dto.response.PrincipalDto;
 import com.cyber.university.handler.exception.CustomRestfullException;
@@ -21,7 +17,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
->>>>>>> dev
 
 /**
  * packageName    : com.cyber.university.controller
@@ -39,8 +34,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class PersonalController {
 
-<<<<<<< HEAD
-=======
     @Autowired
     private UserService userService;
     @Autowired
@@ -48,22 +41,15 @@ public class PersonalController {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
->>>>>>> dev
     /**
      * 메인 홈페이지
      * @author 이준혁
      */
-<<<<<<< HEAD
-    @GetMapping("")
-=======
     @GetMapping("/")
->>>>>>> dev
     public String home() {
         return "main";
     }
 
-<<<<<<< HEAD
-=======
 
     /**
      * 로그인 페이지
@@ -145,5 +131,4 @@ public class PersonalController {
 
 
 
->>>>>>> dev
 }
