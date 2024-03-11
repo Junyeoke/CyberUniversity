@@ -3,6 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,18 +45,29 @@
 
 <body>
 
+=======
+>>>>>>> dev
 <%@ include file="/WEB-INF/view/layout/header.jsp"%>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-content-center align-items-center">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
       <h1>오늘을 배우고,<br>내일을 선도합니다.</h1>
       <h2>Cyber University 학사관리시스템에 오신것을 환영합니다.</h2>
+<<<<<<< HEAD
       <a href="courses.html" class="btn-get-started">로그인하기</a>
+=======
+      <c:choose>
+            <c:when test="${principal == null}">
+      <a href="courses.html" class="btn-get-started">로그인하기</a>
+        </c:when>
+        </c:choose>
+>>>>>>> dev
     </div>
   </section><!-- End Hero -->
 
   <main id="main">
 
+<<<<<<< HEAD
     <!-- ======= About Section ======= -->
     <!-- <section id="about" class="about">
       <div class="container" data-aos="fade-up">
@@ -85,6 +97,64 @@
       </div>
     </section> -->
     <!-- End About Section -->
+=======
+  <!-- ======= User Information Section ======= -->
+  <div class="container">
+  <section id="user-info" class="user-info">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>User Information</h2>
+        <p>${principal.name}님,&nbsp환영합니다.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-3">
+          <div class="info-box">
+
+            <h3>
+            <i class="bx bx-map"></i> 소속</h3>
+            <p>교직원</p>
+
+
+          </div>
+        </div>
+        <div class="col-lg-3">
+                  <div class="info-box">
+
+                    <h3>
+
+                    <i class="bx bx-envelope"></i> 이메일</h3>
+                    <p>교직원</p>
+
+
+                  </div>
+                </div>
+
+      </div>
+
+        <div class="row">
+            <div class="col-lg-3">
+            <div class="info-box">
+
+                <h3>
+
+                <i class="bx bx-bell"></i> 알림</h3>
+
+                <p>1개의 업무사항이 있습니다.</p>
+                </div>
+                </div>
+                </div>
+
+
+    </div>
+  </section>
+  </div>
+  <!-- End User Information Section -->
+
+
+>>>>>>> dev
 
     <!-- ======= Counts Section ======= -->
     <!-- <section id="counts" class="counts section-bg">
